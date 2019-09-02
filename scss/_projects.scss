@@ -3,7 +3,7 @@
 .projects_area{
 	
 }
-.projects_fillter{
+.projects_filter{
 	.filter{
 		text-align: center;
 		margin-top: 70px;
@@ -57,7 +57,7 @@
 			font-family: $hee;
 			font-weight: bold;
 			color: $dip;
-			margin-bottom: 5px;
+			margin-bottom: 0;
 			@include transition;
 			text-transform: uppercase;
 			cursor: pointer;
@@ -65,6 +65,58 @@
 		p{
 			margin-bottom: 0px;
 			font-size: 14px;
+		}
+	}
+	&:hover{
+		&:before{
+			opacity: 1;
+		}
+		.projects_text{
+			h4{
+				background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+}
+
+.projects_item.dark{
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	&:before{
+		content: "";
+		background: rgba(255, 255, 255, .80);
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: all 300ms ease;
+	}
+	.projects_text{
+		position: absolute;
+		left: 0px;
+		bottom: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+		h4{
+			font-size: 21px;
+			font-family: $hee;
+			font-weight: bold;
+			color: #fff;
+			margin-bottom: 0;
+			@include transition;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+		p{
+			margin-bottom: 0px;
+			font-size: 14px;
+			color: #ccc;
 		}
 	}
 	&:hover{
@@ -89,6 +141,10 @@
 	
 }
 .portfolio_details_inner{
+
+	ol{
+		font-size: 14px;
+	}
 	.row{
 		margin-bottom: 65px;
 	}

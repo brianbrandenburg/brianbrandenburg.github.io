@@ -37,6 +37,12 @@ button:focus{
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
+
+.p_60 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+}
 .pad_top{
 	padding-top: 120px;
 }
@@ -74,9 +80,9 @@ button:focus{
 	margin-bottom: 75px;
 	h2{
 		font-family: $hee;
-		font-size: 36px;
+		font-size: 32px;
 		color: $dip;
-		font-weight: bold;
+		font-weight: normal;
 		margin-bottom: 15px;
 		text-transform: uppercase;
 	}
@@ -86,7 +92,6 @@ button:focus{
 		line-height: 26px;
 		color: $pfont;
 		margin-bottom: 0px;
-		max-width: 570px;
 		margin: auto;
 	}
 	&.white{

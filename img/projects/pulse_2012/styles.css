@@ -1,0 +1,75 @@
+body {
+	width: 100%;
+	background-image:url(images/edgebkg.jpg);
+	background-position:center top;
+	background-color:#292e32;
+	padding:20px;
+		
+}
+
+ul {
+margin-left: 0;
+padding-left: 0;
+display: inline;
+}
+
+li {
+display: inline;
+list-style: none;
+}
+
+
+#outer {
+  width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#banner #flier #linkbar #pulsebar{
+	display: inline-block;
+    width: 1000px;
+    margin: 0 auto;
+  
+}
+
+#logo {
+    float:left;
+    width:700px;
+	height:128px;
+	text-align:left;
+	position:relative;
+	background-image:url(images/edge_logo.png);
+	background-position:left top;
+	background-color:transparent;
+	background-repeat:no-repeat;
+}
+
+#social {
+    float:right;
+    width:270px;
+	height:128px;
+	position:relative;
+	top:37px;
+}
+
+#flier{
+	clear:both;
+	background-image:url(images/flier_bkg.png);
+	background-position:center top;
+	background-repeat:no-repeat;
+	height:660px;
+	padding-top:32px;
+	
+}
+
+#pulsebar{
+	background-image:url(images/pulse_info.png);
+	background-position:center top;
+	background-repeat:no-repeat;
+	width:1000px;
+	height:180px;
+		
+}
+
+
+

@@ -8,6 +8,10 @@
 		width: 100%;
 		.home_left_img{
 			padding-top: 195px;
+
+			img {
+				width: 100%;
+			}
 		}
 		.col-lg-6{
 			vertical-align: middle;
@@ -16,6 +20,8 @@
 		.banner_content{
 			text-align: left;
 			color: $dip;
+			padding-top: 200px;
+
 			h5{
 				font-size: 14px;
 				font-family: $rob;
@@ -105,12 +111,12 @@
 .banner_area{
 	position: relative;
 	z-index: 1;
-	min-height: 430px;
+	min-height: 150px;
 	.banner_inner{
 		position: relative;
 		overflow: hidden;
 		width: 100%;
-		min-height: 430px;
+		min-height: 150px;
 		background: #f9f9ff;
 		z-index: 1;
 //		.overlay{
@@ -124,6 +130,7 @@
 //			z-index: -1;
 //			opacity: 1;
 //		}
+
 		.banner_content{
 			margin-top: 70px;
 			h2{
