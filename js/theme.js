@@ -147,10 +147,11 @@
                 loop:true,
                 margin: 30,
                 items: 3,
-                nav: false,
                 autoplay: true,
-                smartSpeed: 1500,
-                dots:true, 
+                smartSpeed: 3000,
+                nav:true,
+                dots:true,
+                dotsEach:true,
                 responsiveClass: true,
                 responsive: {
                     0: {
