@@ -59,7 +59,7 @@
                 <div class="page_link">
                     <a href="index.html">Home</a>
                     <a href="portfolio.html">Portfolio</a>
-                    <a href="#">Time Series Filter</a>
+                    <a href="#">Pipes UI</a>
                 </div>
             </div>
         </div>
@@ -74,55 +74,51 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="left_img">
-                        <img class="img-fluid" src="img/gallery/timebar_thumb.png" alt="">
+                        <img class="img-fluid" src="img/projects/pipes_thumb.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="portfolio_right_text">
-                        <h4>Timebar</h4>
-                        <p>TIme was an important part of the primary "Data Exploration" use case at Zoomdata. The
-                            product had specialized "Timebar" component at the bottom of each dashboard, which acted
-                            like a graphical time series filter. When I arrived at Zoomdata, the control was functional,
-                            but not very intuitive. </p>
+                        <h4>Pipes UI</h4>
+                        <p>Pipes UI was a graphical query builder. The goal was to visually show how data sets within
+                            Edge Suite were related to one another, and help users understand what was happening with
+                            more complex query chains. </p>
                         <ul class="list">
-                            <li><span>Company</span>: Zoomdata</li>
-                            <li><span>Product</span>: Zoomdata</li>
-                            <li><span>Completed</span>: 10 Sept 2019</li>
+                            <li><span>Company</span>: Edge Technologies</li>
+                            <li><span>Product</span>: Edge Suite</li>
+                            <li><span>Completed</span>: 17 Aug 2018</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <h4>Challenge</h4>
-            <p>The code base for this component was very complex, so any enhancement to this area was associated with a
-                high level of effort (lots of story points). As a result, I had to break the enhancements out into a
-                phased approach.</p>
-            <h4>Phase 1</h4>
-            <p>The first phase was a restyle of the component. The of phase one was to shift the visual focus to the content (charts), and not draw the user's eyes to a control
-                with a lot of contrast at the bottom of the application.
-                <img class="img-fluid" src="img/projects/timebar/timebar_phase1.png" alt=""></p>
+            <p>Design a Query Builder that doesn't require a user to write SQL</p>
 
-
-            <h4>Phase 2</h4>
-            <p>The second phase focused on the behavior of the control itself. The original control auto-zoomed, meaning
-                the selected range always consumed the entire width (see phase 1 examples). This resulted in users
-                losing track of where they were at within the available data set. The big change in phase 2 was the ability
-                to alter the selected range without zooming in. This allowed users to see where they were in relation to what was available.  We'd then provide a
-                manual zoom for when users wanted to see more granularity, as well as a "show all" button which
-                effectively set the selected range the MIN & MAX values available in the data set.
-                <img class="img-fluid" src="img/projects/timebar/timebar_phase2.png" alt="">
+            <h4>Pipes UI</h4>
+            <p>The real driver for the Pipes UI were data transforms, operations like JOIN & UNION that take two upstream
+                data sources and mash them together into a single result set. It was very common for our customers to have to perform a JOIN
+                in order to enrich data with severity information, or with Lat and Long information for a map.
+                <img class="img-fluid" src="img/projects/pipes_ui/PIPE_Node_Example_128x.png" alt="">
             </p>
+            <h4>Early Concepts</h4>
+            <p> The original concept came from the Appboard product, which was tragically written using Flex (Nov, 2012).
+                <img class="img-fluid" src="img/projects/pipes_ui/PIPEs_step1-c.png" alt=""></p>
 
-            <h4>Phase 3</h4>
-            <p>The last phase was to enhance the individual tick marks in the time bar. This would allow users to select a
-                field from the data set and display aggregated values in the Y-Axis for each tick mark.
-				Basically, the tick marks turn into a micro-chart.  The original control allowed selection of a time
-                range, but users had to guess at what range was interesting. From past user research, I knew that users
-                generally looked for spikes and troughs, anomalies in the data. So, the goal of phase three was to show anomalies inside the control, and provide users with the context needed for selecting an interesting time range.
-                <img class="img-fluid" src="img/projects/timebar/timebar_phase3.png" alt="">
-            </p>
 
-            <h4>Timebar Mockup</h4>
-            <img class="img-fluid" src="img/projects/timebar/timebar_mock.png" alt="">
+            <h4>A UI for Data Prep</h4>
+            <p> Raw Data from a source is rarely able to be visualized. Admin users almost always needed to "prep" the
+                data for a particular visualization type. For example, An Admin would need to GROUPBY a field name in
+                order to get counts to show on a bar chart. The idea was to provide some tooling around this "data
+                preparation" step, and allow admin users to modify data directly from this pipeline.
+                <img class="img-fluid" src="img/projects/pipes_ui/Pipe-Transform-Dialog2.png" alt=""></p>
+
+
+            <h4>Final Result</h4>
+            <p>The end result was a powerful relational view of the data within the edge suite echo system. It showed data
+                administrators what was happening at the data layer, and gave them the tools they needed to transform
+                raw data into something that could be visualized.
+                <img class="img-fluid" src="img/projects/pipes_ui/PipesUI.png" alt=""></p><
+
 
         </div>
     </div>

@@ -86,9 +86,19 @@
 							</div>
 						</div>
 					</div>
-       				<p>The controversial design issue was whether to show filter details at that top level, or summarize the filter and leverage a hover state for gory details.  Due to the length of multiple distinct STRING values, or DATE ranges with millisecond granularity, I advocated for a summarized filter.  I particularly liked concept 6, which visually summarizes how efficient the filter is (how many rows are filtered), but there's added expense to calculate that.  Attached below is conceptual work done for this feature.</p>
+					<h4>Challenge</h4>
+       				<p>The controversial design issue was whether to:
+						<ol>
+					<li>Show filter details at that top level so users could see exactly how visualizations were being filtered at a glance.</li>
+					<li>Summarize the filter and leverage a tooltip (hover state) for the low level details.  This hides low level details in order to clean up the UI.</li>
+				</ol>
+					</p>
+					<p>This is a common theme with application design.  How much detail is too much?  Due to the length of multiple distinct STRING values, or DATE ranges with millisecond granularity, I advocated for a summarized filter.  I particularly liked concept 6, which visually summarized how efficient the filter was (how many rows were filtered).  This added some additional value, but there was also an added expense to calculate those percentages.  Attached below is conceptual work done for this feature.</p>
+
+					<h4>Concepts</h4>
+					<p>These concepts were vetted with both product and dev, and ultimately decided what the acceptance criteria for the feature would be. </p>
 					<img class="img-fluid" src="img/projects/filter_control/filter_control_comps.png" alt="">
-					<p>A secondary design issue was that in future, these filters would have to work across multiple sources.  That means we'd need to indication when a filter affected multiple Data Sets (multiple charts), versus just one chart on a dashboard.  </p>
+
         		</div>
         	</div>
         </section>

@@ -59,7 +59,7 @@
                 <div class="page_link">
                     <a href="index.html">Home</a>
                     <a href="portfolio.html">Portfolio</a>
-                    <a href="#">Time Series Filter</a>
+                    <a href="#">Cyber Solution</a>
                 </div>
             </div>
         </div>
@@ -74,55 +74,74 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="left_img">
-                        <img class="img-fluid" src="img/gallery/timebar_thumb.png" alt="">
+                        <img class="img-fluid" src="img/projects/cyber_thumb.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="portfolio_right_text">
-                        <h4>Timebar</h4>
-                        <p>TIme was an important part of the primary "Data Exploration" use case at Zoomdata. The
-                            product had specialized "Timebar" component at the bottom of each dashboard, which acted
-                            like a graphical time series filter. When I arrived at Zoomdata, the control was functional,
-                            but not very intuitive. </p>
+                        <h4>Cyber Solution</h4>
+                        <p>While at Edge Technologies, I was involved in designing custom solutions for Cyber Security
+                            use cases. I can't gets into the details about the solutions themselves, but I can highlight
+                            certain aspects.</p>
                         <ul class="list">
                             <li><span>Company</span>: Zoomdata</li>
                             <li><span>Product</span>: Zoomdata</li>
-                            <li><span>Completed</span>: 10 Sept 2019</li>
+                            <li><span>Completed</span>: 17 Aug 2018</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <h4>Challenge</h4>
-            <p>The code base for this component was very complex, so any enhancement to this area was associated with a
-                high level of effort (lots of story points). As a result, I had to break the enhancements out into a
-                phased approach.</p>
-            <h4>Phase 1</h4>
-            <p>The first phase was a restyle of the component. The of phase one was to shift the visual focus to the content (charts), and not draw the user's eyes to a control
-                with a lot of contrast at the bottom of the application.
-                <img class="img-fluid" src="img/projects/timebar/timebar_phase1.png" alt=""></p>
+            <p>How do you visualize security threats? </p>
 
+            <h4>Threat Analysis</h4>
+            <p>One customer could tell that a specific asset has been in contact with a potentially malicious IP
+                address. They wanted to know whether other IP addresses were at risk? The mock up below shows a concept
+                based off a D3's <a href="https://bl.ocks.org/mbostock/1044242" target="_blank">Hierarchical Edge
+                    Bundling</a> visualization. The UX would be comprised of two screens:
+            <ol>
+                <li>A List of potential security incidents with an associated severity</li>
+                <li>Threat Details display highlighting connectivity to other IP addresses within a specified range.
+                </li>
 
-            <h4>Phase 2</h4>
-            <p>The second phase focused on the behavior of the control itself. The original control auto-zoomed, meaning
-                the selected range always consumed the entire width (see phase 1 examples). This resulted in users
-                losing track of where they were at within the available data set. The big change in phase 2 was the ability
-                to alter the selected range without zooming in. This allowed users to see where they were in relation to what was available.  We'd then provide a
-                manual zoom for when users wanted to see more granularity, as well as a "show all" button which
-                effectively set the selected range the MIN & MAX values available in the data set.
-                <img class="img-fluid" src="img/projects/timebar/timebar_phase2.png" alt="">
+            </ol>
             </p>
 
-            <h4>Phase 3</h4>
-            <p>The last phase was to enhance the individual tick marks in the time bar. This would allow users to select a
-                field from the data set and display aggregated values in the Y-Axis for each tick mark.
-				Basically, the tick marks turn into a micro-chart.  The original control allowed selection of a time
-                range, but users had to guess at what range was interesting. From past user research, I knew that users
-                generally looked for spikes and troughs, anomalies in the data. So, the goal of phase three was to show anomalies inside the control, and provide users with the context needed for selecting an interesting time range.
-                <img class="img-fluid" src="img/projects/timebar/timebar_phase3.png" alt="">
-            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="img/projects/cyber/Cyber_AlertSummary_06.png" alt="">
+                    <p>Incidents</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="img/projects/cyber/Cyber_ConnectionSummary_04.png" alt="">
+                    <p>Details</p>
+                </div>
+            </div>
 
-            <h4>Timebar Mockup</h4>
-            <img class="img-fluid" src="img/projects/timebar/timebar_mock.png" alt="">
+
+            <h4>Geospacial Analysis</h4>
+            <p>Another customer was focused on more of a geospacial summary of security incidents. </p>
+
+
+			<div class="row">
+				<div class="col-md-4">
+					<img class="img-fluid" src="img/projects/cyber/Cyber-01.png" alt="">
+					<p>The top view would show a summary based on the physical location of IT assets.</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-fluid" src="img/projects/cyber/Cyber-03.png" alt="">
+					<p>Users could then drill down and see KPIs for the impacted resource.</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-fluid" src="img/projects/cyber/Cyber-04.png" alt="">
+					<p>User's could also switch context, and see a relational view of the impacted resource.</p>
+				</div>
+			</div>
+
+            <h4>Concepts</h4>
+            <p>These concepts were vetted with both product and dev, and ultimately decided what the acceptance criteria
+                for the feature would be. </p>
+
 
         </div>
     </div>
