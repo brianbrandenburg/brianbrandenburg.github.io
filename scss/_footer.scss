@@ -83,14 +83,18 @@
 		font-family: $rob;
 		color: $pfont;
 		margin-bottom: 10px;
+		text-align: center;
 	}
 	.list{
+		text-align: center;
+
 		li{
 			margin-right: 17px;
 			display: inline-block;
+
 			a{
 				color: #cccccc;
-				font-size: 14px;
+				font-size: 32px;
 				@include transition;
 			}
 			&:last-child{

@@ -3661,9 +3661,11 @@ h6 {
   border-radius: 10px;
   background: #fff;
   padding: 40px 28px;
+  height: 350px;
 }
 .testi_item p {
   font-style: italic;
+  height: 180px;
 }
 .testi_item h4 {
   color: #222222;
@@ -3776,6 +3778,10 @@ h6 {
   font-family: "Roboto", sans-serif;
   color: #777777;
   margin-bottom: 10px;
+  text-align: center;
+}
+.social_widget .list {
+  text-align: center;
 }
 .social_widget .list li {
   margin-right: 17px;
@@ -3783,7 +3789,7 @@ h6 {
 }
 .social_widget .list li a {
   color: #cccccc;
-  font-size: 14px;
+  font-size: 32px;
   transition: all 300ms linear 0s;
 }
 .social_widget .list li:last-child {
