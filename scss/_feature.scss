@@ -141,6 +141,7 @@
 	@include transition;
 	background: #fff;
 	margin-bottom: 30px;
+	height: 450px;
 	i{
 		margin-bottom: 35px;
 		display: block;
@@ -169,13 +170,6 @@
 	&:hover{
 		box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
 		border-color: #fff;
-		i{
-			&:before{
-				background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-			}
-		}
 	}
 }
 /* End Feature Area css
