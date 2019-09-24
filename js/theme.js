@@ -41,10 +41,12 @@
                 loop:true,
                 margin: 30,
                 items: 5,
-                nav: false,
+                nav: true,
                 autoplay: false,
                 smartSpeed: 1500,
-                dots:false, 
+                dots: true,
+                dotsEach: true,
+                autoplayHoverPause: true,
                 responsiveClass: true,
                 responsive: {
                     0: {
@@ -149,9 +151,10 @@
                 items: 3,
                 autoplay: true,
                 smartSpeed: 3000,
-                nav:true,
-                dots:true,
-                dotsEach:true,
+                nav: false,
+                dots: true,
+                dotsEach: true,
+                autoplayHoverPause: false,
                 responsiveClass: true,
                 responsive: {
                     0: {

@@ -26,9 +26,11 @@
                 loop:true,
                 margin: 30,
                 items: 2,
-                nav:false,
+                nav:true,
                 autoplay: true,
                 dots: true,
+                dotsEach: true,
+                autoplayHoverPause: true,
                 smartSpeed: 1500,
                 responsiveClass: true,
                 responsive: {
