@@ -150,7 +150,7 @@
                 margin: 30,
                 items: 3,
                 autoplay: true,
-                smartSpeed: 3000,
+                smartSpeed: 1500,
                 nav: false,
                 dots: true,
                 dotsEach: true,
